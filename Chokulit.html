@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chokulit - Handcrafted Chocolates</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #fff8f0;
+            color: #4b2e2e;
+        }
+        header {
+            background-color: #8b5e3c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-image: url('https://images.unsplash.com/photo-1578985545062-69928b1d9587');
+            background-size: cover;
+            color: white;
+        }
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 15px;
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: left;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #8b5e3c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #8b5e3c;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        @media (max-width: 600px) {
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Chokulit</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#order">Order</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Delight in Every Bite</h2>
+        <p>Handcrafted chocolates made with love & care</p>
+    </section>
+
+    <section class="section" id="about">
+        <h2>About Us</h2>
+        <p>At Chokulit, we craft premium, handcrafted chocolates using the finest ingredients. Our mission is to bring happiness with every bite of our delicious creations.</p>
+    </section>
+
+    <section class="section" id="products">
+        <h2>Our Products</h2>
+        <div class="products">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1612197528679-6d5b2ce4c566" alt="Dark Chocolate">
+                <h3>Dark Delight</h3>
+                <p>Rich, intense dark chocolate crafted for true cocoa lovers.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1606312619344-f49246b5fcd3" alt="Milk Chocolate">
+                <h3>Milk Magic</h3>
+                <p>Creamy and smooth milk chocolate that melts in your mouth.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1593809044758-343d4e7eae61" alt="Fruit & Nut">
+                <h3>Fruit & Nut Bliss</h3>
+                <p>A perfect blend of dried fruits and crunchy nuts in silky chocolate.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="order">
+        <h2>Order Now</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="product">Select Product:</label>
+            <select id="product" name="product">
+                <option value="dark">Dark Delight</option>
+                <option value="milk">Milk Magic</option>
+                <option value="fruitnut">Fruit & Nut Bliss</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <section class="section" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: chokulit@gmail.com | Phone: +91 98765 43210</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Chokulit. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
